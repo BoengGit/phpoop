@@ -3,13 +3,13 @@
 require_once "data/Person.php";
 
 // Person 1
-$person1 = new Person();
+$person1 = new Person("Bajang", "Lombok");
 $person1->name = "Bajang";
 $person1->address = "Lombok";
 $person1->country = "Indonesia";
 
 // Person 2
-$person2 = new Person();
+$person2 = new Person("Gilang", null);
 $person2->name = "Gilang";
 $person2->address = null;
 $person2->sayHello($person2->name);
