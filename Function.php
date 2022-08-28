@@ -9,3 +9,6 @@ $person1->sayHello("Gilang");
 $person2 = new Person();
 $person2->name = "Gilang";
 $person2->sayHello(null);
+
+$person1->info();
+$person2->info();
