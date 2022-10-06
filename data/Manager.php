@@ -1,15 +1,19 @@
 <?php
 
-class Manager {
+class Manager
+{
     var string $name;
 
-    function __construct(string $name)
+    function sayHello(string $name): void
     {
-        $this->name = $name;
+        echo "Hi $name, my name is manager $this->name" . PHP_EOL;
     }
+}
 
-    function sayHello($name)
+class VicePresident extends Manager
+{
+    function sayHello(string $name): void
     {
-        echo "Hi $name, my name is $this->name" . PHP_EOL;
+        echo "Hi $name, my name is VP $this->name" . PHP_EOL;
     }
 }
